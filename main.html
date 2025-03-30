@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background: url('pic1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2 id="form-title">Login</h2>
+            <p id="error-message" class="error"></p>
+            <form id="auth-form">
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+    <input type="password" id="password" placeholder="Password" required>
+    <span id="toggle-password" class="eye-icon">
+        <svg id="eye-open" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8S1 12 1 12z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+        <svg id="eye-closed" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <path d="M17.94 17.94A10.86 10.86 0 0112 20c-7 0-11-8-11-8a18.41 18.41 0 014.62-5.44M9.88 9.88a3 3 0 104.24 4.24"></path>
+            <path d="M1 1l22 22"></path>
+        </svg>
+    </span>
+</div>
+<div id="password-rules" style="display: none;">
+    <ul>
+        <li>8 characters</li>
+        <li>1 uppercase letter</li>
+        <li>1 number</li>
+        <li>1 special character (@$!%*?&)</li>
+    </ul>
+</div>
+
+
+                <button type="submit">Login</button>
+            </form>
+            <a href="#" id="forgot-password">Forgot Password?</a>
+            <p>
+                <span id="toggle-text">Don't have an account?</span> 
+                <a href="#" id="toggle-link">Sign Up</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+
+/* Input container styling */
+.input-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-right: 35px; /* Space for eye icon */
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Forgot Password Link */
+#forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Eye Icon */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.eye-icon:hover {
+    color: #007BFF;
+}
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}
+
+/* Toggle icon for switching between login/signup */
+.toggle-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    color: blue;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
